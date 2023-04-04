@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{48cb6017-9a0c-4ba8-9f3b-ff425d9e85e3}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>RTS3DRetake_Madalina</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Raspberry</TargetLinuxPlatform>
+    <LinuxProjectType>{8748239F-558C-44D1-944B-07B09C35B330}</LinuxProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <IncludePath>/home/pi/glm;/usr/include;/usr/include/x11;/usr/include/arm-linux-gnueabihf/c++/8;.;./Resources;./Headers;/usr/include/bullet;/usr/include/bullet/LinearMath;$(IncludePath)</IncludePath>
+    <LibraryPath>/usr/lib;/usr/lib/arm-linux-gnueabihf;$(LibraryPath)</LibraryPath>
+    <SourcePath>.;$(SourcePath)</SourcePath>
+    <RemotePostBuildEventUseInBuild>false</RemotePostBuildEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Link>
+      <LibraryDependencies>GLESv2;EGL;pthread;X11;Xrandr;BulletCollision;BulletSoftBody;BulletDynamics;LinearMath</LibraryDependencies>
+    </Link>
+    <RemotePostBuildEvent>
+      <Command>
+      </Command>
+      <Message>
+      </Message>
+    </RemotePostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Link>
+      <LibraryDependencies>wiringPi</LibraryDependencies>
+    </Link>
+    <RemotePostBuildEvent>
+      <Command>gpio export 17 out</Command>
+      <Message>export pin 17 using the gpio utility so that we can execute the blink program without sudo</Message>
+    </RemotePostBuildEvent>
+    <ClCompile>
+      <TreatWarningAsError>true</TreatWarningAsError>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ImGui\imgui.cpp" />
+    <ClCompile Include="ImGui\imgui_demo.cpp" />
+    <ClCompile Include="ImGui\imgui_draw.cpp" />
+    <ClCompile Include="ImGui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="ImGui\imgui_tables.cpp" />
+    <ClCompile Include="ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Sources\Camera.cpp" />
+    <ClCompile Include="Sources\CubeModel.cpp" />
+    <ClCompile Include="Sources\Graphics.cpp" />
+    <ClCompile Include="Sources\ImGuiManager.cpp" />
+    <ClCompile Include="Sources\Input.cpp" />
+    <ClCompile Include="Sources\LoadFiles.cpp" />
+    <ClCompile Include="Sources\ModelManager.cpp" />
+    <ClCompile Include="Sources\MousePicker.cpp" />
+    <ClCompile Include="Sources\ObjectModel.cpp" />
+    <ClCompile Include="Sources\PhysicsDraw.cpp" />
+    <ClCompile Include="Sources\PhysicsObject.cpp" />
+    <ClCompile Include="Sources\Ray.cpp" />
+    <ClCompile Include="Sources\ShaderManager.cpp" />
+    <ClCompile Include="Sources\Tank.cpp" />
+    <ClCompile Include="Sources\Terrain.cpp" />
+    <ClCompile Include="Sources\TinyObjectLoader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Headers\Camera.h" />
+    <ClInclude Include="Headers\CubeModel.h" />
+    <ClInclude Include="Headers\Graphics.h" />
+    <ClInclude Include="Headers\ImGuiManager.h" />
+    <ClInclude Include="Headers\Input.h" />
+    <ClInclude Include="Headers\LoadFiles.h" />
+    <ClInclude Include="Headers\ModelManager.h" />
+    <ClInclude Include="Headers\MousePicker.h" />
+    <ClInclude Include="Headers\ObjectModel.h" />
+    <ClInclude Include="Headers\Perlin.h" />
+    <ClInclude Include="Headers\PhysicsDraw.h" />
+    <ClInclude Include="Headers\PhysicsObject.h" />
+    <ClInclude Include="Headers\precomp.h" />
+    <ClInclude Include="Headers\Ray.h" />
+    <ClInclude Include="Headers\ShaderManager.h" />
+    <ClInclude Include="Headers\stb_image.h" />
+    <ClInclude Include="Headers\Tank.h" />
+    <ClInclude Include="Headers\Terrain.h" />
+    <ClInclude Include="Headers\tiny_obj_loader.h" />
+    <ClInclude Include="ImGui\imconfig.h" />
+    <ClInclude Include="ImGui\imgui.h" />
+    <ClInclude Include="ImGui\imgui_impl_opengl3.h" />
+    <ClInclude Include="ImGui\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="ImGui\imgui_internal.h" />
+    <ClInclude Include="ImGui\imstb_rectpack.h" />
+    <ClInclude Include="ImGui\imstb_textedit.h" />
+    <ClInclude Include="ImGui\imstb_truetype.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Resources\Models\brian_01.mtl" />
+    <None Include="Resources\Models\brian_02.mtl" />
+    <None Include="Resources\Models\brian_03.mtl" />
+    <None Include="Resources\Models\Tank.mtl" />
+    <None Include="Resources\Models\tankv3.mtl" />
+    <None Include="Resources\Models\Tank\SimpleTankReduced2.mtl" />
+    <None Include="Resources\Shaders\modelFragShader.frag" />
+    <None Include="Resources\Shaders\modelVertShader.vert" />
+    <None Include="Resources\Shaders\terrain.frag" />
+    <None Include="Resources\Shaders\terrain.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\Models\brian_01.png" />
+    <Image Include="Resources\Models\brian_01_em.png" />
+    <Image Include="Resources\Models\brian_02.png" />
+    <Image Include="Resources\Models\brian_02_em.png" />
+    <Image Include="Resources\Models\brian_03.png" />
+    <Image Include="Resources\Models\brian_03_em.png" />
+    <Image Include="Resources\Models\Tank\Tank_body.png" />
+    <Image Include="Resources\Models\Tank\Tank_track.png" />
+    <Image Include="Resources\Models\Tank_body.png" />
+    <Image Include="Resources\Models\Tank_track.png" />
+    <Image Include="Resources\Models\texture_diffuse1.png" />
+    <Image Include="Resources\Textures\Harvey2.jpg" />
+    <Image Include="Resources\Textures\heightmap.png" />
+    <Image Include="Resources\Textures\HeightMapThin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="Resources\Models\Tank.obj">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+    </Object>
+    <Object Include="Resources\Models\Tank\SimpleTankReduced2.obj">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</ExcludedFromBuild>
+    </Object>
+  </ItemGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>DEBUG=1;GLM_ENABLE_EXPERIMENTAL;BULLET;GLES3</PreprocessorDefinitions>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

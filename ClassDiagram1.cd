@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Graphics" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QIBiIAAAUAAAZIAAgAQhAEhbDAAASAAICEAiAEMAKCE=</HashCode>
+      <FileName>Headers\Graphics.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CubeModel" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAgAAAAAAAAAAAAAAAAAgAAAAAAAAAIA=</HashCode>
+      <FileName>Headers\CubeModel.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Camera" Collapsed="true">
+    <Position X="7.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQACEAAAAQAAAEAgQAAAAAAAAIEBAEAAAACAAAAUAAI=</HashCode>
+      <FileName>Headers\Camera.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Input" Collapsed="true">
+    <Position X="7.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAEECgAAAAAAAAKACgAQAAAAAIIAIAAAAAACBABAAAA=</HashCode>
+      <FileName>Headers\Input.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoadFiles" Collapsed="true">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAACAAAQAQAAAAAAAAAgAAQAAAAAAAAAABAA=</HashCode>
+      <FileName>Headers\LoadFiles.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ModelManager" Collapsed="true">
+    <Position X="5.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAwAAABAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Headers\ModelManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MousePicker" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAgjACAQARAgAAEgAAAEgAAAgJAIAAAAAAAIA=</HashCode>
+      <FileName>Headers\MousePicker.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ObjectModel" Collapsed="true">
+    <Position X="4.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DARAkAABEEiQksDgAgIJAAAEBAIwCxkQEAgAAhJAQAA=</HashCode>
+      <FileName>Headers\ObjectModel.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Perlin" Collapsed="true">
+    <Position X="2.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CEAAAACAAACAAAAAAAAAAAQAAAAEAAIAAAAAEAAAIAA=</HashCode>
+      <FileName>Headers\Perlin.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhysicsDraw" Collapsed="true">
+    <Position X="7.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgERQAAACCAAIAAGAAICEAAEAABQAAQAAACAECSAAA=</HashCode>
+      <FileName>Headers\PhysicsDraw.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameValues" Collapsed="true">
+    <Position X="5.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Headers\PhysicsObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhysicsObj" Collapsed="true">
+    <Position X="7.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAABABAAABAAAgAAEAAEwEgBARAAAAAAAA=</HashCode>
+      <FileName>Headers\PhysicsObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Ray" Collapsed="true">
+    <Position X="7.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEgAEAAAAIQGKAoAAAA4EACEQCYBIAAAAQAAAgwSAAA=</HashCode>
+      <FileName>Headers\Ray.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShaderManager" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgARAAAAABAAAAAkAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Headers\ShaderManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HeightMap" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAwAQAAAIIQgEgQgQAIAAAAAAABQAAAQBQASAEAIAAI=</HashCode>
+      <FileName>Headers\Terrain.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ImGuiManager" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQEAAAAAAAAAAAAAIAAFAAAACAAAAgCAAADAAAAAAI=</HashCode>
+      <FileName>Headers\ImGuiManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="__unnamed_struct_0403_1" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAgCBAAAAAAAAAAAAA=</HashCode>
+      <FileName>Headers\Graphics.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Target_State" Collapsed="true">
+    <Position X="2.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAQAQAQAAAAAAAEAAAAAAAAgAAAAgAA=</HashCode>
+      <FileName>Headers\Graphics.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="__unnamed_struct_040e_1" Collapsed="true">
+    <Position X="4.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAQBAAAAAAAAAAgA=</HashCode>
+      <FileName>Headers\Ray.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="ObjectData" Collapsed="true">
+    <Position X="0.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Headers\Graphics.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="RayReturn" Collapsed="true">
+    <Position X="5.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Headers\Ray.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Enum Name="Gamestates" Collapsed="true">
+    <Position X="2.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAACAAAAAAABAAAIAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Headers\ImGuiManager.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
